@@ -17,17 +17,29 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -40,50 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC3ROMBHL8E3qAXelMs1Y1I_rqvxIDpNPk',
-    appId: '1:972831421131:web:391e545baa47c124cce14e',
-    messagingSenderId: '972831421131',
-    projectId: 'loomo-4cf9d',
-    authDomain: 'loomo-4cf9d.firebaseapp.com',
-    storageBucket: 'loomo-4cf9d.firebasestorage.app',
-    measurementId: 'G-Z2ZYGS08SK',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCgcivDut5B4VlaexcU5TLQH2DL26B3SsA',
-    appId: '1:972831421131:android:3dca5f1665d8d4b5cce14e',
+    appId: '1:972831421131:android:d9a5967d0d00f4b9cce14e',
     messagingSenderId: '972831421131',
     projectId: 'loomo-4cf9d',
     storageBucket: 'loomo-4cf9d.firebasestorage.app',
   );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBXs3wMPNiIfwZQF1D85dcfe9vlqVuh2cU',
-    appId: '1:972831421131:ios:af7c16fbe35577d9cce14e',
-    messagingSenderId: '972831421131',
-    projectId: 'loomo-4cf9d',
-    storageBucket: 'loomo-4cf9d.firebasestorage.app',
-    iosBundleId: 'com.example.loomopro',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBXs3wMPNiIfwZQF1D85dcfe9vlqVuh2cU',
-    appId: '1:972831421131:ios:af7c16fbe35577d9cce14e',
-    messagingSenderId: '972831421131',
-    projectId: 'loomo-4cf9d',
-    storageBucket: 'loomo-4cf9d.firebasestorage.app',
-    iosBundleId: 'com.example.loomopro',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC3ROMBHL8E3qAXelMs1Y1I_rqvxIDpNPk',
-    appId: '1:972831421131:web:690d2a0b05307706cce14e',
-    messagingSenderId: '972831421131',
-    projectId: 'loomo-4cf9d',
-    authDomain: 'loomo-4cf9d.firebaseapp.com',
-    storageBucket: 'loomo-4cf9d.firebasestorage.app',
-    measurementId: 'G-8P4BR3KPWS',
-  );
-
 }

@@ -1,4 +1,4 @@
-# loomopro
+# loomo
 
 A new Flutter project.
 

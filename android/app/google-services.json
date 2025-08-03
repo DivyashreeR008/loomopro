@@ -7,9 +7,47 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:972831421131:android:d9a5967d0d00f4b9cce14e",
+        "android_client_info": {
+          "package_name": "com.example.loomo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgcivDut5B4VlaexcU5TLQH2DL26B3SsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:972831421131:android:3dca5f1665d8d4b5cce14e",
         "android_client_info": {
           "package_name": "com.example.loomopro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgcivDut5B4VlaexcU5TLQH2DL26B3SsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972831421131:android:567434b0b3aa6eaacce14e",
+        "android_client_info": {
+          "package_name": "com.loomo.app"
         }
       },
       "oauth_client": [],

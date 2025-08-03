@@ -1,6 +1,6 @@
 {
-    "name": "loomopro",
-    "short_name": "loomopro",
+    "name": "loomo",
+    "short_name": "loomo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
