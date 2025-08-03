@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972831421131",
+    "project_id": "loomo-4cf9d",
+    "storage_bucket": "loomo-4cf9d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972831421131:android:3dca5f1665d8d4b5cce14e",
+        "android_client_info": {
+          "package_name": "com.example.loomopro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgcivDut5B4VlaexcU5TLQH2DL26B3SsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
